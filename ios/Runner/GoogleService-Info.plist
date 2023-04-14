@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>496163108763-lgtrfiu3kvfucj6vqaudeogj2gc123jg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.496163108763-lgtrfiu3kvfucj6vqaudeogj2gc123jg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAGCXSr4w5Qp6Q80S_5sj7Y5pIviawJ--k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>496163108763</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.eceSeminarApp</string>
+	<key>PROJECT_ID</key>
+	<string>raeeucci-2023</string>
+	<key>STORAGE_BUCKET</key>
+	<string>raeeucci-2023.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:496163108763:ios:caf6e7de9aa0337d03533e</string>
+</dict>
+</plist>

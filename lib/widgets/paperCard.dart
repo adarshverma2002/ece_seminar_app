@@ -1,8 +1,9 @@
-import 'package:ece_seminar_app/screens/eventDetails.dart';
 import 'package:flutter/material.dart';
 
-class eventCard extends StatefulWidget {
-  eventCard(
+import '../screens/paperDetails.dart';
+
+class paperCard extends StatefulWidget {
+  paperCard(
       {Key? key,
       required this.description,
       required this.date,
@@ -12,10 +13,14 @@ class eventCard extends StatefulWidget {
       required this.venue,
       required this.mode,
       required this.link,
+      required this.paperID,
+      required this.category,
       required this.eventDetails})
       : super(key: key);
 
   String title;
+  String category;
+  String paperID;
   String eventDetails;
   String date;
   String description;
@@ -26,10 +31,10 @@ class eventCard extends StatefulWidget {
   String link;
 
   @override
-  State<eventCard> createState() => _eventCardState();
+  State<paperCard> createState() => _paperCardState();
 }
 
-class _eventCardState extends State<eventCard> {
+class _paperCardState extends State<paperCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -89,6 +94,25 @@ class _eventCardState extends State<eventCard> {
             SizedBox(
               height: 8,
             ),
+
+            Row(
+              children: [
+                Icon(
+                  Icons.book_rounded,
+                  size: 25,
+                ),
+                SizedBox(
+                  width: 11,
+                ),
+                Text(
+                  '${widget.category}',
+                  style: TextStyle(fontSize: 15),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 8,
+            ),
             // Row(
             //   children: [
             //     Text(
@@ -137,7 +161,7 @@ class _eventCardState extends State<eventCard> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => eventDetailScreen(
+                          builder: (context) => paperDetailScreen(
                                 selectedEventDetails: '${widget.eventDetails}',
                                 venue: '${widget.venue}',
                                 time: '${widget.time}',
@@ -147,6 +171,8 @@ class _eventCardState extends State<eventCard> {
                                 date: '${widget.date}',
                                 description: '${widget.description}',
                                 link: '${widget.link}',
+                                paperID: '${widget.paperID}, ',
+                                category: '${widget.category}',
                               )));
                 },
                 child: Text(
