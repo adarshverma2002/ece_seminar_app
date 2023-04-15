@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class speakerContainer extends StatefulWidget {
   speakerContainer(
@@ -6,11 +7,13 @@ class speakerContainer extends StatefulWidget {
       required this.name,
       required this.college,
       required this.image,
-      required this.location})
+      required this.location,
+      required this.link})
       : super(key: key);
 
   String name;
   String college;
+  String link;
   String image;
   String location;
 
@@ -63,7 +66,12 @@ class _speakerContainerState extends State<speakerContainer> {
                 child: Align(
                     alignment: FractionalOffset.bottomCenter,
                     child: ElevatedButton(
-                        onPressed: () {}, child: Text('More Info'))))
+                        onPressed: () async {
+                          if (await canLaunch("${widget.link}")) {
+                            await launch('${widget.link}');
+                          }
+                        },
+                        child: Text('More Info'))))
           ],
         ),
       ),

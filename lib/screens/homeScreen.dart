@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ece_seminar_app/screens/committeePage.dart';
+import 'package:ece_seminar_app/screens/conferencePage.dart';
 import 'package:ece_seminar_app/screens/loginScreen.dart';
 import 'package:ece_seminar_app/screens/speakerScreen.dart';
 import 'package:ece_seminar_app/screens/srmPage.dart';
@@ -17,9 +18,9 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 final List<String> imgList = [
-  'assets/srmimage.jpg',
+  'assets/arch.png',
   'assets/conferenceimage.JPG',
-  'assets/committee.jpg'
+  'assets/committee2.png'
 ];
 
 final List<String> imgText = [
@@ -53,15 +54,15 @@ class _homePageState extends State<homePage> {
     switch (index) {
       case 0:
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => aboutCommittee()));
+            context, MaterialPageRoute(builder: (context) => aboutSRM()));
         break;
       case 1:
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => aboutSRM()));
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => aboutConference()));
         break;
       case 2:
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => aboutSRM()));
+            context, MaterialPageRoute(builder: (context) => aboutCommittee()));
     }
   }
 

@@ -75,12 +75,15 @@ class speakerList extends StatelessWidget {
                         college: 'Chang Gung University',
                         image: 'assets/cher.png',
                         location: 'Taiwan',
+                        link: 'https://chermingtan.org/',
                       ),
                       speakerContainer(
                         name: 'Dr. Mohamed Elmaghrbi',
                         college: 'University of Nottingham',
                         image: 'assets/mohamed.png',
                         location: 'United Kingdom',
+                        link:
+                            'https://www.nottingham.ac.uk/ engineering/departments/foundationyear /people/mohamed.elmaghrbi',
                       ),
                     ],
                   ),
@@ -96,12 +99,16 @@ class speakerList extends StatelessWidget {
                         college: 'Metropolitan University',
                         image: 'assets/nemanja.png',
                         location: 'Serbia',
+                        link:
+                            'https://www.metropolitan.ac.rs/profesori/nemanja-zdravkovic/',
                       ),
                       speakerContainer(
                         name: 'Dr. Lee Yee Hui',
                         college: 'Nanyang Technological University',
                         image: 'assets/lee.png',
                         location: 'Singapore',
+                        link:
+                            'https://www.ntu.edu.sg/erian/about-us/our-people/cluster-directors/lee-yee-hui',
                       ),
                     ],
                   ),
@@ -117,12 +124,15 @@ class speakerList extends StatelessWidget {
                         college: 'Belgrade Metropolitan University',
                         image: 'assets/miroslava.png',
                         location: 'Serbia',
+                        link:
+                            'https://www.metropolitan.ac.rs/profesori/miroslava-raspopovic-milic/',
                       ),
                       speakerContainer(
                         location: 'Taiwan',
                         name: 'Dr. Cheng-TeLi',
                         college: 'National Cheng Kung University',
                         image: 'assets/cheng.png',
+                        link: 'http://graphics.csie.ncku.edu.tw/Tony/tony.htm',
                       ),
                     ],
                   ),
@@ -134,15 +144,20 @@ class speakerList extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       speakerContainer(
-                          location: 'United States of America',
-                          image: 'assets/bhaskar.png',
-                          name: 'Dr. Vidhyacharan Bhaskar',
-                          college: 'University of California'),
+                        location: 'United States of America',
+                        image: 'assets/bhaskar.png',
+                        name: 'Dr. Vidhyacharan Bhaskar',
+                        college: 'University of California',
+                        link:
+                            'https://engineering.sfsu.edu/faculty-profile-vidhyacharan-bhaskar',
+                      ),
                       speakerContainer(
-                          location: 'Taiwan',
-                          image: 'assets/poming.png',
-                          name: 'Prof. Po-Ming Lee',
-                          college: 'Southern Taiwan University'),
+                        location: 'Taiwan',
+                        image: 'assets/poming.png',
+                        name: 'Prof. Po-Ming Lee',
+                        college: 'Southern Taiwan University',
+                        link: 'NUll',
+                      ),
                     ],
                   ),
                 ),
@@ -153,15 +168,45 @@ class speakerList extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       speakerContainer(
-                          location: 'Taiwan',
-                          image: 'assets/nasimuddin.png',
-                          name: 'Dr. Nasimuddin',
-                          college: 'Scientist, A*STAR'),
+                        location: 'Taiwan',
+                        image: 'assets/nasimuddin.png',
+                        name: 'Dr. Nasimuddin',
+                        college: 'Scientist, A*STAR',
+                        link:
+                            'https://www.linkedin.com/in/dr-nasimuddin-31469720?originalSubdomain=sg',
+                      ),
                       speakerContainer(
-                          location: 'United States of America',
-                          image: 'assets/prabha.png',
-                          name: 'Dr. Prabha Sundaravadivel',
-                          college: 'The University of Texas at Tyler'),
+                        location: 'United States of America',
+                        image: 'assets/prabha.png',
+                        name: 'Dr. Prabha Sundaravadivel',
+                        college: 'The University of Texas at Tyler',
+                        link:
+                            'https://www.uttyler.edu/directory/ee/sundaravadivel.php',
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      speakerContainer(
+                        location: 'Taiwan',
+                        image: 'assets/chun.png',
+                        name: 'Prof. Chun -Yi Lee',
+                        college: 'National Tsing Hua University',
+                        link: 'NUll',
+                      ),
+                      speakerContainer(
+                        location: 'Malaysia',
+                        image: 'assets/enghock.png',
+                        name: 'Dr. Eng-Hock Lim',
+                        college: 'Universiti Tunku Abdul Rahman',
+                        link:
+                            'https://scholar.google.com/citations?user=8Rt3gp8AAAAJ&hl=en',
+                      ),
                     ],
                   ),
                 ),

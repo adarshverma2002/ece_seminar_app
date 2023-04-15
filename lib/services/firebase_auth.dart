@@ -66,11 +66,11 @@ class FirebaseAuthMethods {
         email: email,
         password: password,
       );
-      if (!user.emailVerified) {
-        await sendEmailVerification(context);
-        // restrict access to certain things using provider
-        // transition to another page instead of home screen
-      }
+      // if (!user.emailVerified) {
+      //   await sendEmailVerification(context);
+      //   // restrict access to certain things using provider
+      //   // transition to another page instead of home screen
+      // }
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) => homePage(),

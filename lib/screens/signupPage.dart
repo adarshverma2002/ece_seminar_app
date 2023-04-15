@@ -37,7 +37,7 @@ class _signUpPageState extends State<signUpPage> {
             const SizedBox(
               height: 40,
             ),
-            Image.asset('assets/scooter.png'),
+            Image.asset('assets/communication.jpg'),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: Column(
@@ -130,7 +130,7 @@ class _signUpPageState extends State<signUpPage> {
                             }
                           },
                           style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xFFe0bb68)),
+                              backgroundColor: Color(0xff0bd0a3)),
                           child: const Text(
                             "Sign Up",
                             style: TextStyle(
@@ -152,7 +152,7 @@ class _signUpPageState extends State<signUpPage> {
                           },
                           child: Text(
                             "Join now",
-                            style: TextStyle(color: Color(0xFFe0bb68)),
+                            style: TextStyle(color: Color(0xff0bd0a3)),
                           ))
                     ],
                   ),

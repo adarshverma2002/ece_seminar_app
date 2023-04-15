@@ -1,8 +1,10 @@
 import 'package:ece_seminar_app/screens/forgotPassword.dart';
-import 'package:ece_seminar_app/screens/homeScreen.dart';
 import 'package:ece_seminar_app/screens/signupPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import '../services/firebase_auth.dart';
 
 class loginPage extends StatefulWidget {
   const loginPage({Key? key}) : super(key: key);
@@ -12,6 +14,7 @@ class loginPage extends StatefulWidget {
 }
 
 class _loginPageState extends State<loginPage> {
+  bool _obscureText = false;
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 
@@ -22,8 +25,15 @@ class _loginPageState extends State<loginPage> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    _obscureText = true;
+  }
+
+  @override
   Widget build(BuildContext context) {
-    // FirebaseAuthMethods methods = context.read<FirebaseAuthMethods>();
+    FirebaseAuthMethods methods = context.read<FirebaseAuthMethods>();
+
     return Scaffold(
       backgroundColor: Color(0xFF143f40),
       body: SingleChildScrollView(
@@ -117,14 +127,27 @@ class _loginPageState extends State<loginPage> {
                     borderRadius: BorderRadius.circular(15)),
                 child: TextField(
                   controller: passwordController,
+                  obscureText: _obscureText,
                   style: TextStyle(color: Colors.white),
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                       border: InputBorder.none,
                       prefixIcon: Icon(
                         Icons.key,
                         color: Colors.white,
                         size: 30,
                       ),
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              _obscureText = !_obscureText;
+                            });
+                          },
+                          icon: Icon(
+                            _obscureText
+                                ? Icons.visibility_off
+                                : Icons.visibility,
+                            color: Colors.white,
+                          )),
                       hintText: "Password",
                       hintStyle: TextStyle(color: Colors.white)),
                 ),
@@ -151,13 +174,13 @@ class _loginPageState extends State<loginPage> {
                 width: 250,
                 child: ElevatedButton(
                   onPressed: () {
-                    signIn();
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => homePage()));
-                    // methods.loginWithEmail(
-                    //     email: emailController.text.trim(),
-                    //     password: passwordController.text.trim(),
-                    //     context: context);
+                    // signIn();
+                    // Navigator.push(context,
+                    //     MaterialPageRoute(builder: (context) => homePage()));
+                    methods.loginWithEmail(
+                        email: emailController.text.trim(),
+                        password: passwordController.text.trim(),
+                        context: context);
                   },
                   child: const Text(
                     "Sign In",
