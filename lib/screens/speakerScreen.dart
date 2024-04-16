@@ -71,19 +71,19 @@ class speakerList extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       speakerContainer(
-                        name: 'Prof. Cher-Ming Tan',
-                        college: 'Chang Gung University',
-                        image: 'assets/cher.png',
-                        location: 'Taiwan',
-                        link: 'https://chermingtan.org/',
+                        name: 'Dr. Xing Zhou',
+                        college: 'Nanyang Technological University',
+                        image: 'assets/xing.jpg',
+                        location: 'Singapore',
+                        link: 'https://dr.ntu.edu.sg/cris/rp/rp00798',
                       ),
                       speakerContainer(
-                        name: 'Dr. Mohamed Elmaghrbi',
-                        college: 'University of Nottingham',
-                        image: 'assets/mohamed.png',
-                        location: 'United Kingdom',
-                        link:
-                            'https://www.nottingham.ac.uk/ engineering/departments/foundationyear /people/mohamed.elmaghrbi',
+                        name: 'Dr. Seunghyup Yoo',
+                        college:
+                            'Korea Advanced Institute of Science and Technology',
+                        image: 'assets/seung.jpg',
+                        location: 'South Koreaa',
+                        link: 'https://ee.kaist.ac.kr/en/professor/12225/',
                       ),
                     ],
                   ),
@@ -97,91 +97,90 @@ class speakerList extends StatelessWidget {
                       speakerContainer(
                         name: 'Dr Nemanja Zdravković',
                         college: 'Metropolitan University',
-                        image: 'assets/nemanja.png',
+                        image: 'assets/nemanja.jpg',
                         location: 'Serbia',
                         link:
                             'https://www.metropolitan.ac.rs/profesori/nemanja-zdravkovic/',
                       ),
                       speakerContainer(
-                        name: 'Dr. Lee Yee Hui',
-                        college: 'Nanyang Technological University',
-                        image: 'assets/lee.png',
+                        name: 'Mr. Ratnakar Rao',
+                        college: 'Samsung R&D Institute',
+                        image: 'assets/ratnakar.jpg',
+                        location: 'Bangalore',
+                        link: '',
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      speakerContainer(
+                        name: 'Dr. Akash Kumar',
+                        college: 'Tohoku University',
+                        image: 'assets/akash.png',
+                        location: 'Japan',
+                        link:
+                            'https://scholar.google.co.in/citations?user=4U426k4AAAAJ&hl=en',
+                      ),
+                      speakerContainer(
+                        location: 'Malaysia',
+                        name: 'Dr. Pang Wai Leong',
+                        college: 'Taylor’s University',
+                        image: 'assets/pang.jpg',
+                        link: 'https://expert.taylors.edu.my/cv/waileong.pang',
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      speakerContainer(
+                        location: 'India',
+                        image: 'assets/manish.jpg',
+                        name: 'Dr. Manish Pandey',
+                        college: 'IIT Bhilai',
+                        link:
+                            'https://scholar.google.co.in/citations?user=J4HHDIcAAAAJ&hl=en',
+                      ),
+                      speakerContainer(
+                        location: 'Taiwan',
+                        image: 'assets/shu.png',
+                        name: 'Prof. Kuei-Shu Chang-Liao',
+                        college: 'National Tsing Hua University',
+                        link:
+                            'https://nes.site.nthu.edu.tw/p/412-1356-10562.php?Lang=en',
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      speakerContainer(
                         location: 'Singapore',
-                        link:
-                            'https://www.ntu.edu.sg/erian/about-us/our-people/cluster-directors/lee-yee-hui',
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      speakerContainer(
-                        name: 'Dr. Miroslava Raspopovic Milic',
-                        college: 'Belgrade Metropolitan University',
-                        image: 'assets/miroslava.png',
-                        location: 'Serbia',
-                        link:
-                            'https://www.metropolitan.ac.rs/profesori/miroslava-raspopovic-milic/',
-                      ),
-                      speakerContainer(
-                        location: 'Taiwan',
-                        name: 'Dr. Cheng-TeLi',
-                        college: 'National Cheng Kung University',
-                        image: 'assets/cheng.png',
-                        link: 'http://graphics.csie.ncku.edu.tw/Tony/tony.htm',
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      speakerContainer(
-                        location: 'United States of America',
-                        image: 'assets/bhaskar.png',
-                        name: 'Dr. Vidhyacharan Bhaskar',
-                        college: 'University of California',
-                        link:
-                            'https://engineering.sfsu.edu/faculty-profile-vidhyacharan-bhaskar',
-                      ),
-                      speakerContainer(
-                        location: 'Taiwan',
-                        image: 'assets/poming.png',
-                        name: 'Prof. Po-Ming Lee',
-                        college: 'Southern Taiwan University',
-                        link: 'NUll',
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      speakerContainer(
-                        location: 'Taiwan',
                         image: 'assets/nasimuddin.png',
                         name: 'Dr. Nasimuddin',
                         college: 'Scientist, A*STAR',
                         link:
-                            'https://www.linkedin.com/in/dr-nasimuddin-31469720?originalSubdomain=sg',
+                            'https://scholar.google.com/citations?user=bHoBK3QAAAAJ&hl=en',
                       ),
                       speakerContainer(
-                        location: 'United States of America',
-                        image: 'assets/prabha.png',
-                        name: 'Dr. Prabha Sundaravadivel',
-                        college: 'The University of Texas at Tyler',
-                        link:
-                            'https://www.uttyler.edu/directory/ee/sundaravadivel.php',
+                        location: 'Israel',
+                        image: 'assets/david.png',
+                        name: 'Prof. David Cahen',
+                        college: 'Weizmann Institute of Science',
+                        link: 'https://www.weizmann.ac.il/materials/Cahen/home',
                       ),
                     ],
                   ),
@@ -193,19 +192,19 @@ class speakerList extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       speakerContainer(
-                        location: 'Taiwan',
-                        image: 'assets/chun.png',
-                        name: 'Prof. Chun -Yi Lee',
-                        college: 'National Tsing Hua University',
-                        link: 'NUll',
+                        location: 'India',
+                        image: 'assets/deepak.png',
+                        name: 'Prof. Deepak Gupta',
+                        college: 'IIT Kanpur',
+                        link: 'https://www.iitk.ac.in/new/deepak-gupta',
                       ),
                       speakerContainer(
-                        location: 'Malaysia',
-                        image: 'assets/enghock.png',
-                        name: 'Dr. Eng-Hock Lim',
-                        college: 'Universiti Tunku Abdul Rahman',
+                        location: 'Ireland',
+                        image: 'assets/gerard.png',
+                        name: 'Prof. Gerard Dooly',
+                        college: 'University of Limerick',
                         link:
-                            'https://scholar.google.com/citations?user=8Rt3gp8AAAAJ&hl=en',
+                            'https://www.researchgate.net/profile/Gerard-Dooly',
                       ),
                     ],
                   ),

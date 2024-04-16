@@ -62,16 +62,18 @@ class _speakerContainerState extends State<speakerContainer> {
                 fontSize: 12,
               ),
             ),
-            Expanded(
-                child: Align(
-                    alignment: FractionalOffset.bottomCenter,
-                    child: ElevatedButton(
-                        onPressed: () async {
-                          if (await canLaunch("${widget.link}")) {
-                            await launch('${widget.link}');
-                          }
-                        },
-                        child: Text('More Info'))))
+            (widget.link == "")
+                ? SizedBox.shrink()
+                : Expanded(
+                    child: Align(
+                        alignment: FractionalOffset.bottomCenter,
+                        child: ElevatedButton(
+                            onPressed: () async {
+                              if (await canLaunch("${widget.link}")) {
+                                await launch('${widget.link}');
+                              }
+                            },
+                            child: Text('More Info'))))
           ],
         ),
       ),

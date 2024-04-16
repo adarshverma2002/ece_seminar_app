@@ -25,7 +25,7 @@
     </queries>
 
    <application
-        android:label="ece_seminar_app"
+        android:label="RAEEUCCI"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

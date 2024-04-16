@@ -5,12 +5,14 @@ class dayCard extends StatefulWidget {
       {Key? key,
       required this.number,
       required this.id,
-      required this.selected})
+      required this.selected,
+      required this.size})
       : super(key: key);
 
   String number;
   final int id;
   bool selected;
+  var size;
 
   @override
   State<dayCard> createState() => _dayCardState();
@@ -35,12 +37,16 @@ class _dayCardState extends State<dayCard> {
             Text(
               'Day',
               style: TextStyle(
-                  fontSize: 20, color: Colors.black87, fontFamily: 'Righteous'),
+                  fontSize: widget.size.width * 0.06,
+                  color: Colors.black87,
+                  fontFamily: 'Righteous'),
             ),
             Text(
               '${widget.number}',
               style: TextStyle(
-                  fontSize: 44, color: Colors.black87, fontFamily: 'Righteous'),
+                  fontSize: widget.size.width * 0.08,
+                  color: Colors.black87,
+                  fontFamily: 'Righteous'),
             )
           ],
         ),

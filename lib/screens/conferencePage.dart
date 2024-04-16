@@ -72,7 +72,7 @@ class aboutConference extends StatelessWidget {
                   child: Column(
                     children: [
                       Text(
-                        'RAEEUCCI-2.0',
+                        'RAEEUCCI-2024',
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
